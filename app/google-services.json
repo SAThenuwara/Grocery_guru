@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "971937951460",
+    "project_id": "grocery-guru-a721a",
+    "storage_bucket": "grocery-guru-a721a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971937951460:android:f4995c6bbb8eaa159b06f1",
+        "android_client_info": {
+          "package_name": "com.example.groceryguru"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACZxJ_F9gytb_NdmefhNIUIppe_HDIkxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
