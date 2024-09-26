@@ -288,6 +288,7 @@
                         android:id="@+id/addToListButton1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:backgroundTint="@color/green"
                         android:layout_marginTop="8dp"
                         android:text="Add to List" />
                 </LinearLayout>
@@ -333,6 +334,7 @@
                         android:id="@+id/addToListButton2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:backgroundTint="@color/green"
                         android:layout_marginTop="8dp"
                         android:text="Add to List" />
                 </LinearLayout>
@@ -378,6 +380,7 @@
                         android:id="@+id/addToListButton3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:backgroundTint="@color/green"
                         android:layout_marginTop="8dp"
                         android:text="Add to List" />
                 </LinearLayout>
@@ -423,6 +426,7 @@
                         android:id="@+id/addToListButton4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:backgroundTint="@color/green"
                         android:layout_marginTop="8dp"
                         android:text="Add to List" />
                 </LinearLayout>
@@ -437,8 +441,8 @@
                     android:padding="8dp">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="171dp"
+                        android:layout_height="112dp"
                         android:contentDescription="Product Image 5"
                         android:src="@drawable/product5" />
 
@@ -468,6 +472,52 @@
                         android:id="@+id/addToListButton5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:backgroundTint="@color/green"
+                        android:layout_marginTop="8dp"
+                        android:text="Add to List" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="171dp"
+                        android:layout_height="112dp"
+                        android:contentDescription="Product Image 6"
+                        android:src="@drawable/product6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Brown Eggs"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="RS. 200.00"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="12 pieces"
+                        android:textAlignment="center" />
+
+                    <Button
+                        android:id="@+id/addToListButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/green"
                         android:layout_marginTop="8dp"
                         android:text="Add to List" />
                 </LinearLayout>
@@ -477,6 +527,8 @@
 
         </LinearLayout>
     </ScrollView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
