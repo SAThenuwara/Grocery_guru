@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D3D3D3"
+    android:padding="16dp">
+
+    <!-- Title -->
+<TextView
+android:id="@+id/listTitle"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="List"
+android:textSize="24sp"
+android:textStyle="bold"
+android:layout_gravity="center"
+android:paddingBottom="16dp" />
+
+    <!-- Scrollable List of Products -->
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Product 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/product1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apples"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/productDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: Rs.300.00 • Weight: 500g"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/decreaseQuantity"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/search_view_border"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/quantityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/increaseQuantity"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/search_view_border"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="16dp">
+
+            <ImageView
+                android:id="@+id/tickIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_tick" />
+
+            <ImageView
+                android:id="@+id/removeIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_cross"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Product 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/product3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:id="@+id/productName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bananas"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/productDetails2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: Rs 250.00 • Weight: 300g"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/decreaseQuantity2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/search_view_border"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/quantityText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/increaseQuantity2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/search_view_border"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="16dp">
+
+            <ImageView
+                android:id="@+id/tickIconProduct2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_tick"
+                />
+
+            <ImageView
+                android:id="@+id/removeIconProduct2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_cross"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Product 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="82dp"
+            android:src="@drawable/product4" />
+
+        <LinearLayout
+            android:layout_width="123dp"
+            android:layout_height="84dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="1dp">
+
+            <TextView
+                android:id="@+id/productName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomatoes"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/productDetails3"
+                android:layout_width="100dp"
+                android:layout_height="56dp"
+                android:text="Price: Rs 150.00 •
+                 Weight: 1kg"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/decreaseQuantity3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/search_view_border"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/quantityText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/increaseQuantity3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/search_view_border"
+                android:text="+" />
+
+            <ImageView
+                android:id="@+id/tickIconProduct3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_tick" />
+
+            <ImageView
+                android:id="@+id/removeIconProduct3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_cross"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
