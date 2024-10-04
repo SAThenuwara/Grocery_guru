@@ -3,22 +3,21 @@ package com.example.groceryguru.activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.groceryguru.R
 
-class LoginActivity : AppCompatActivity() {
+class WelcomePageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_login)
-        val createAccountButton: Button = findViewById(R.id.loginButton)
+        // Set the content view to the welcome page layout
+        setContentView(R.layout.activity_welcome_page)
+
+        val createAccountButton: Button = findViewById(R.id.getStartedButton)
 
         createAccountButton.setOnClickListener {
             // Create an Intent to start the SignupActivity
-            val intent = Intent(this, WelcomePageActivity::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
 
         }

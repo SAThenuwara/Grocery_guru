@@ -9,8 +9,6 @@
 
     <!-- Cart and Notification Icons -->
 
-    <!-- Search Bar -->
-
     <!-- Horizontal Scrolling Banner -->
 
     <RelativeLayout
@@ -23,9 +21,6 @@
         tools:layout_editor_absoluteX="0dp">
 
         <!-- Cart Icon -->
-
-        <!-- Bell Notification Icon -->
-
         <ImageView
             android:id="@+id/cartIcon"
             android:layout_width="43dp"
@@ -35,6 +30,7 @@
             android:contentDescription="Cart Icon"
             android:src="@drawable/ic_cart" />
 
+        <!-- Bell Notification Icon -->
         <ImageView
             android:id="@+id/bellIcon"
             android:layout_width="29dp"
@@ -43,18 +39,18 @@
             android:contentDescription="Bell Notification Icon"
             android:src="@drawable/ic_bell" />
 
+        <!-- Title -->
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="28dp"
+            android:layout_marginEnd="58dp"
             android:layout_toStartOf="@+id/cartIcon"
-            android:text="Groceries"
+            android:text="Fruits"
             android:textSize="30dp" />
     </RelativeLayout>
 
-    <!-- Product Grid with 6 products -->
-
+    <!-- Search Bar -->
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchBar"
         android:layout_width="match_parent"
@@ -67,16 +63,22 @@
         android:queryHint="apples"
         app:iconifiedByDefault="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
+    <!-- Scrollable Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar">
+
+    <!-- Product Grid -->
     <GridLayout
         android:id="@+id/featuredProductsGrid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/searchBar"
         android:columnCount="2"
         android:padding="8dp">
 
@@ -107,13 +109,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="RS. 300.00"
-                android:textAlignment="center" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
                 android:text="500g"
                 android:textAlignment="center" />
 
@@ -122,6 +117,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:textColor="@color/white"
                 android:backgroundTint="@color/green"
                 android:text="Add to List" />
         </LinearLayout>
@@ -153,13 +149,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="RS. 300.00"
-                android:textAlignment="center" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
                 android:text="500g"
                 android:textAlignment="center" />
 
@@ -168,6 +157,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:textColor="@color/white"
                 android:backgroundTint="@color/green"
                 android:text="Add to List" />
         </LinearLayout>
@@ -199,13 +189,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="RS. 150.00"
-                android:textAlignment="center" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
                 android:text="1kg"
                 android:textAlignment="center" />
 
@@ -214,6 +197,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:textColor="@color/white"
                 android:backgroundTint="@color/green"
                 android:text="Add to List" />
         </LinearLayout>
@@ -231,22 +215,15 @@
                 android:layout_width="171dp"
                 android:layout_height="112dp"
                 android:contentDescription="Product Image 4"
-                android:src="@drawable/product4" />
+                android:src="@drawable/grapes" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Fresh Tomatoes"
+                android:text="Grapes"
                 android:textAlignment="center"
                 android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="RS. 80.00"
-                android:textAlignment="center" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -260,11 +237,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:textColor="@color/white"
                 android:backgroundTint="@color/green"
                 android:text="Add to List" />
         </LinearLayout>
-
-        <!-- Product 5 -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -277,22 +253,15 @@
                 android:layout_width="171dp"
                 android:layout_height="112dp"
                 android:contentDescription="Product Image 5"
-                android:src="@drawable/product5" />
+                android:src="@drawable/avocadoes" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Chicken Breast"
+                android:text="Avocadoes"
                 android:textAlignment="center"
                 android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="RS. 500.00"
-                android:textAlignment="center" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -306,6 +275,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:textColor="@color/white"
                 android:backgroundTint="@color/green"
                 android:text="Add to List" />
         </LinearLayout>
@@ -319,42 +289,40 @@
             android:orientation="vertical"
             android:padding="8dp">
 
-            <ImageView
-                android:layout_width="171dp"
-                android:layout_height="112dp"
-                android:contentDescription="Product Image 6"
-                android:src="@drawable/product6" />
+        <ImageView
+            android:layout_width="171dp"
+            android:layout_height="112dp"
+            android:contentDescription="Product Image 6"
+            android:src="@drawable/product6" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Brown Eggs"
-                android:textAlignment="center"
-                android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Mangoes"
+            android:textAlignment="center"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="RS. 200.00"
-                android:textAlignment="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="500g pieces"
+            android:textAlignment="center" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="12 pieces"
-                android:textAlignment="center" />
-
-            <Button
-                android:id="@+id/addToListButton6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:backgroundTint="@color/green"
-                android:text="Add to List" />
+        <Button
+            android:id="@+id/addToListButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green"
+            android:text="Add to List" />
         </LinearLayout>
+
+        <!-- Repeat the same for other products -->
+
     </GridLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -57,7 +57,7 @@
             android:layout_width="390dp"
             android:layout_height="287dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_recipe_image"
+            android:src="@drawable/pepperoni_pizza"
             android:contentDescription="Recipe Image"
             android:scaleType="centerCrop"
             android:layout_marginTop="16dp"/>
@@ -67,7 +67,7 @@
             android:id="@+id/recipeName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chocolate Cake"
+            android:text="Pepperoni Pizza"
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"/>
@@ -93,36 +93,40 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="8dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="74dp"
-                android:layout_height="70dp"
-                android:contentDescription="Ingredient 1"
-                android:src="@drawable/ic_egg" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheese"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="74dp"
-                android:layout_height="70dp"
-                android:layout_marginStart="8dp"
-                android:src="@drawable/ic_milk"
-                android:contentDescription="Ingredient 2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Pepperoni"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="74dp"
-                android:layout_height="70dp"
-                android:layout_marginStart="8dp"
-                android:src="@drawable/ic_vanilla"
-                android:contentDescription="Ingredient 3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Tomato Sauce"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="74dp"
-                android:layout_height="70dp"
-                android:layout_marginStart="8dp"
-                android:src="@drawable/ic_cocoa"
-                android:contentDescription="Ingredient 4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Basil"
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <!-- Horizontal Divider -->
@@ -151,7 +155,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jenny online 12 mins ago"
+                android:text="Miriam online 12 hours ago"
                 android:textSize="16sp"
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
@@ -176,15 +180,15 @@
             android:layout_width="383dp"
             android:layout_height="243dp"
             android:layout_marginTop="8dp"
-            android:text="1. Preheat the oven to 350°F.\n
-2. Mix flour, sugar, and cocoa.\n
-3. Add eggs, milk, and vanilla.\n
-4. Pour the batter into a pan and bake.\n
-5. Let the cake cool for 15 minutes.\n
-6. Prepare the frosting by mixing butter, sugar, and cocoa.\n
-7. Frost the cooled cake.\n
-8. Garnish with sprinkles or fruit, if desired.\n
-9. Slice and serve the cake."
+            android:text="1. Preheat the oven to 450°F.\n
+2. Roll out the pizza dough on a floured surface.\n
+3. Spread a thin layer of pizza sauce over the dough.\n
+4. Sprinkle shredded mozzarella cheese evenly on top.\n
+5. Arrange pepperoni slices over the cheese.\n
+6. Add additional toppings if desired (e.g., bell peppers, onions).\n
+7. Bake the pizza in the preheated oven for 12-15 minutes or until the crust is golden and cheese is bubbly.\n
+8. Remove from the oven and let cool for 5 minutes.\n
+9. Slice and serve your homemade pepperoni pizza."
             android:textSize="16sp" />
 
         <!-- Buttons -->
@@ -200,6 +204,7 @@
                 android:id="@+id/addToListButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:backgroundTint="@color/green"
                 android:text="Add to List"/>
 
