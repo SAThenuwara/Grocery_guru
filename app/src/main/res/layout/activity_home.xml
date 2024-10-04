@@ -270,12 +270,7 @@
                         android:textAlignment="center"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:text="RS. 300.00"
-                        android:textAlignment="center" />
+
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -319,12 +314,7 @@
                         android:textAlignment="center"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:text="RS. 300.00"
-                        android:textAlignment="center" />
+
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -368,12 +358,7 @@
                         android:textAlignment="center"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:text="RS. 150.00"
-                        android:textAlignment="center" />
+
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -417,12 +402,7 @@
                         android:textAlignment="center"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:text="RS. 80.00"
-                        android:textAlignment="center" />
+
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -466,12 +446,7 @@
                         android:textAlignment="center"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:text="RS. 500.00"
-                        android:textAlignment="center" />
+
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -515,12 +490,7 @@
                         android:textAlignment="center"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:text="RS. 240.00"
-                        android:textAlignment="center" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -590,23 +560,9 @@
                         android:layout_gravity="center" />
                 </LinearLayout>
 
-                <!-- Second Tab -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:gravity="center">
 
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        app:srcCompat="@drawable/btn_2"
-                        android:layout_gravity="center" />
-                </LinearLayout>
 
-                <!-- Third Tab -->
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"

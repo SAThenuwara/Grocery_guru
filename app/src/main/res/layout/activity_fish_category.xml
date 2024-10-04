@@ -5,7 +5,7 @@
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.HomeActivity">
+    tools:context=".activity.FishCategoryActivity">
 
     <!-- Cart and Notification Icons -->
 
@@ -51,6 +51,12 @@
             android:layout_toStartOf="@+id/cartIcon"
             android:text="Fish"
             android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="46dp"
+            android:layout_height="33dp"
+            app:srcCompat="@drawable/ic_back" />
     </RelativeLayout>
 
     <!-- Product Grid with 6 products -->
@@ -106,7 +112,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Salmon"
+                    android:text="Tilapiya"
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
@@ -180,13 +186,13 @@
                     android:layout_width="171dp"
                     android:layout_height="112dp"
                     android:contentDescription="Product Image 3"
-                    android:src="@drawable/cheese" />
+                    android:src="@drawable/mackerel" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Cheese"
+                    android:text="Mackerel"
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
@@ -220,13 +226,13 @@
                     android:layout_width="171dp"
                     android:layout_height="112dp"
                     android:contentDescription="Product Image 4"
-                    android:src="@drawable/flour" />
+                    android:src="@drawable/sardines" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Flour"
+                    android:text="Sardine"
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
@@ -260,13 +266,13 @@
                     android:layout_width="171dp"
                     android:layout_height="112dp"
                     android:contentDescription="Product Image 5"
-                    android:src="@drawable/sugar" />
+                    android:src="@drawable/cod" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Sugar"
+                    android:text="Cod"
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
@@ -300,13 +306,13 @@
                     android:layout_width="171dp"
                     android:layout_height="112dp"
                     android:contentDescription="Product Image 6"
-                    android:src="@drawable/vanilla" />
+                    android:src="@drawable/haddock" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Vanilla"
+                    android:text="Haddock"
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
