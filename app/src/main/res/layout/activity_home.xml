@@ -579,7 +579,7 @@
                         android:id="@+id/shutoff"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        app:srcCompat="@drawable/shutoff"
+                        app:srcCompat="@drawable/heart"
                         android:layout_gravity="center" />
                 </LinearLayout>
             </LinearLayout>

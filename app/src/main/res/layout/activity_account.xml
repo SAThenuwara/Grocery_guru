@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#D3D3D3"
+    android:orientation="vertical"
     android:padding="16dp">
 
     <!-- White rectangle for profile section -->
+    <ImageView
+        android:id="@+id/backIcon"
+        android:layout_width="79dp"
+        android:layout_height="37dp"
+        app:srcCompat="@drawable/ic_back" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
         android:background="#FFFFFF"
-        android:padding="16dp"
         android:gravity="center"
-        android:layout_marginBottom="20dp">
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <!-- Profile Image (circular) -->
 
         <!-- Name -->
+
         <ImageView
             android:id="@+id/profileImage"
             android:layout_width="100dp"
@@ -32,40 +39,40 @@
             android:id="@+id/profileName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
             android:text="John Doe"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center" />
+            android:textStyle="bold" />
 
         <!-- Email -->
         <TextView
             android:id="@+id/profileEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="john.doe@example.com"
-            android:textSize="14sp"
             android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="john.doe@example.com"
             android:textColor="#808080"
-            android:layout_marginTop="4dp" />
+            android:textSize="14sp" />
     </LinearLayout>
 
     <!-- Account options -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#D3D3D3">
+        android:background="#D3D3D3"
+        android:orientation="vertical">
 
         <!-- My List -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#FFFFFF"
-            android:padding="12dp"
             android:layout_marginBottom="10dp"
-            android:gravity="center_vertical">
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
 
             <ImageView
                 android:layout_width="24dp"
@@ -76,10 +83,10 @@
                 android:id="@+id/myList"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="My List"
-                android:textSize="16sp"
                 android:layout_marginStart="16dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="My List"
+                android:textSize="16sp" />
 
             <ImageView
                 android:layout_width="24dp"
@@ -91,11 +98,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#FFFFFF"
-            android:padding="12dp"
             android:layout_marginBottom="10dp"
-            android:gravity="center_vertical">
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
 
             <ImageView
                 android:layout_width="24dp"
@@ -106,10 +113,10 @@
                 android:id="@+id/myRecipes"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="My Recipes"
-                android:textSize="16sp"
                 android:layout_marginStart="16dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="My Recipes"
+                android:textSize="16sp" />
 
             <ImageView
                 android:layout_width="24dp"
@@ -121,11 +128,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#FFFFFF"
-            android:padding="12dp"
             android:layout_marginBottom="10dp"
-            android:gravity="center_vertical">
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
 
             <ImageView
                 android:layout_width="24dp"
@@ -136,10 +143,10 @@
                 android:id="@+id/notifications"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Notifications"
-                android:textSize="16sp"
                 android:layout_marginStart="16dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="Notifications"
+                android:textSize="16sp" />
 
             <ImageView
                 android:layout_width="24dp"
@@ -151,11 +158,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#FFFFFF"
-            android:padding="12dp"
             android:layout_marginBottom="10dp"
-            android:gravity="center_vertical">
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
 
             <ImageView
                 android:layout_width="24dp"
@@ -166,10 +173,10 @@
                 android:id="@+id/signOut"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Sign Out"
-                android:textSize="16sp"
                 android:layout_marginStart="16dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="Sign Out"
+                android:textSize="16sp" />
 
             <ImageView
                 android:layout_width="24dp"

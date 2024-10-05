@@ -22,6 +22,14 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        val shutoffImageView: ImageView = findViewById(R.id.shutoff)
+
+        // Set OnClickListener to the shutoff ImageView
+        shutoffImageView.setOnClickListener {
+            val intent = Intent(this, RecipeListActivity::class.java)
+            startActivity(intent) // Start RecipeListActivity
+        }
+
         // Find image views by their IDs
         val imageView1: ImageView = findViewById(R.id.imageView3)
         val imageView2: ImageView = findViewById(R.id.imageView4)

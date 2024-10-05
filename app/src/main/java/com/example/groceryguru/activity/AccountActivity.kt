@@ -1,6 +1,7 @@
 package com.example.groceryguru.activity
 
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -12,6 +13,11 @@ class AccountActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_account)
+
+        val backButton: ImageView = findViewById(R.id.backIcon) // Ensure this ID matches your layout
+        backButton.setOnClickListener {
+            finish() // Navigate back to the previous activity
+        }
 
     }
 }
