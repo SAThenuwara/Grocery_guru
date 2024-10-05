@@ -4,14 +4,20 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.groceryguru.R
 import com.google.firebase.firestore.FirebaseFirestore
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
+import androidx.lifecycle.ViewModelProvider
+import com.example.groceryguru.ProductViewModel
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
+
 //import com.google.firebase.auth.FirebaseAuth
 
 class HomeActivity : AppCompatActivity() {
+    private lateinit var productViewModel: ProductViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -78,6 +84,14 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, FishCategoryActivity::class.java)
             startActivity(intent)
         }
+
+
+
+
+
+
+
+
 
         val addToListButton1 = findViewById<Button>(R.id.addToListButton1)
         addToListButton1.setOnClickListener {
@@ -282,5 +296,9 @@ class HomeActivity : AppCompatActivity() {
 //
 //        val dialog = builder.create()
 //        dialog.show()
+
+
    }
+
 }
+

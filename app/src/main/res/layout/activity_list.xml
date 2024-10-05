@@ -1,33 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#D3D3D3"
-    android:padding="16dp">
-
-    <!-- Title -->
-<TextView
-android:id="@+id/listTitle"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="List"
-android:textSize="24sp"
-android:textStyle="bold"
-android:layout_gravity="center"
-android:paddingBottom="16dp" />
-
-    <!-- Scrollable List of Products -->
-<ScrollView
-android:layout_width="match_parent"
-android:layout_height="match_parent">
-
-<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:id ="@+id/listLayout"/>
-</ScrollView>
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp"
+    android:gravity="center_vertical">
+
+    <!-- Product Name -->
+<!--    <TextView-->
+<!--        android:id="@+id/productName"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="2"-->
+<!--        android:text="Product Name"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_gravity="start" />-->
+
+<!--    &lt;!&ndash; Product Weight &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/productWeight"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:text="500g"-->
+<!--        android:textSize="14sp"-->
+<!--        android:gravity="center" />-->
+
+<!--    &lt;!&ndash; Quantity Control (Minus Button) &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/buttonMinus"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:text="-"-->
+<!--        android:layout_gravity="center" />-->
+
+<!--    &lt;!&ndash; Product Quantity &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/productQuantity"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="1"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginHorizontal="8dp" />-->
+
+<!--    &lt;!&ndash; Quantity Control (Plus Button) &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/buttonPlus"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:text="+"-->
+<!--        android:layout_gravity="center" />-->
+
+<!--    &lt;!&ndash; Cross Icon (Remove Product) &ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:id="@+id/buttonRemove"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:src="@drawable/ic_cross"-->
+<!--        android:contentDescription="Remove Product"-->
+<!--        android:layout_gravity="center" />-->
+    <ImageView
+        android:id="@+id/backIcon"
+        android:layout_width="98dp"
+        android:layout_height="54dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="My List"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
 </LinearLayout>
