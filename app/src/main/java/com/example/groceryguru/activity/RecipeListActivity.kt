@@ -7,11 +7,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.groceryguru.R
 
-class AccountActivity : AppCompatActivity() {
+class RecipeListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_account)
+        setContentView(R.layout.activity_recipe_list)
 
     }
 }
